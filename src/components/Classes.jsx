@@ -31,16 +31,16 @@ const Classes = () => {
     return (
         <div >
             <ToastContainer />
-            <div className='container mx-2 '>
+            <div className='mx-auto container '>
 
                 <h1 className='sm:text-lg lg:text-3xl text-center my-5'>See All Classes</h1>
-                <div className='mx-2 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5'>
+                <div className='mx-3 my-5 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5'>
                     {
                         classes?.map((singleClass => (<div key={singleClass.id}
                             className="p-3 rounded-lg bg-blue-100"
                         >
                             <h3 className='sm:text-lg lg:text-xl text-black'>Teacher Name: {singleClass?.name}</h3>
-                            <h5 className='text-lg'>Teacher Names On {singleClass?.time}</h5>
+                            <h5 className='text-lg'>Classes Starts On {singleClass?.time}</h5>
 
                             <button
                                 id='btn-subscribe'
